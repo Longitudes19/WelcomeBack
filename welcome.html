@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome Back 👋</h1>
+        <p>We are happy to have you back</p>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" class="black-bg-input" placeholder="Enter email address" required>
+            </div>
+
+            
+<div class="form-group">
+    <label for="password">Password *</label>
+    <div class="password-container">
+        <input type="password" id="password" class="black-bg-input" placeholder="Enter password" required>
+        <span class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
+    </div>
+</div>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="agreeTerms">
+                <label for="agreeTerms">I agree to terms and conditions</label>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="login()" class="blue-box">Login</button>
+                <span class="or">OR</span>
+                <button type="button" onclick="register()" class="black-box">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
